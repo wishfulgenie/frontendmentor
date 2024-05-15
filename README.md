@@ -20,6 +20,6 @@ To view my solutions and explore the code, simply click on the challenge links a
 Feedback is always appreciated! If you have any suggestions, questions, or improvements for my solutions, feel free to [open an issue](https://github.com/wishfulgenie/frontendmentor/issues).
 
 ## Acknowledgements
-Special thanks to Frontend Mentor for providing these fantastic challenges to help developers enhance their skills.
+Special thanks to [Frontend Mentor](https://www.frontendmentor.io/) for providing these fantastic challenges to help developers enhance their skills.
 
 Happy coding! 😊
