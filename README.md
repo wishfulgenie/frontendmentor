@@ -2,8 +2,6 @@
 
 Welcome to my Frontend Mentor Challenges repository! 🌟
 
-![Frontend Mentor Challenges](https://img.shields.io/badge/Frontend%20Mentor-Challenges-blue)
-
 ## About
 This repository is dedicated to showcasing my solutions to the challenges provided by [Frontend Mentor](https://www.frontendmentor.io/challenges). Frontend Mentor offers a range of realistic front-end challenges designed to improve your coding skills by building real projects.
 
