@@ -11,7 +11,7 @@ This repository is dedicated to showcasing my solutions to the challenges provid
 ## Technologies Used
 - HTML
 - CSS
-- JavaScript
+- JavaScript (React)
 
 ## Getting Started
 To view my solutions and explore the code, simply click on the challenge links above. Feel free to browse through the code, leave feedback, or suggest improvements.
