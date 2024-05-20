@@ -57,5 +57,36 @@ p, h1, h2, h3, h4, h5, h6 {
 body {
   display: flex;
   flex-direction: column;
-  place-items: center;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--clr-lightGray);
+  gap: 10px;
+}
+
+.QR-code {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem 1rem 2rem 1rem;
+  background-color: var(--clr-white);
+  max-width: 375px;
+  border-radius: 1rem;;
+  gap: 1rem;
+}
+
+.QR-image {
+  border-radius: 10px;
+}
+
+.QR-code-title {
+  font-family: 'Outfit';
+  font-weight: var(--fw-bold);
+  color: var(--clr-darkBlue);
+}
+
+.QR-code-info {
+  font-family: 'Outfit';
+  font-weight: var(--fw-regular);
+  color: var(--clr-grayishBlue);
+  font-size: var(--font-paragraph);
 }
