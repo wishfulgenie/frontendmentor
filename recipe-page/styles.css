@@ -41,9 +41,8 @@
   --font-family-secondary: 'Outfit', sans-serif;
 
   --fw-regular: 400;
-  --fw-bold: 600;
-  --fw-black: 700;
-
+  --fw-semiBold: 600;
+  --fw-bold: 700;
 
 }
 
@@ -71,14 +70,4 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 #root, #__next {
   isolation: isolate;
-}
-
-/* Applying 'Young Serif' to specific elements */
-h1, h2, h3, h4, h5, h6 {
-  font-family: var(--font-family-default);
-  font-weight: var(--fw-regular);
-}
-
-p {
-  font-family: var(--font-family-secondary);
 }
