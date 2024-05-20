@@ -49,6 +49,7 @@ input, button, textarea, select {
 }
 p, h1, h2, h3, h4, h5, h6 {
   overflow-wrap: break-word;
+  padding: 0;
 }
 #root, #__next {
   isolation: isolate;
@@ -67,21 +68,29 @@ body {
 .QR-code {
   display: flex;
   flex-direction: column;
-  padding: 1rem 1rem 2rem 1rem;
+  padding: 1rem;
   background-color: var(--clr-white);
-  max-width: 375px;
+  max-width: var(--width-mobile);
   border-radius: 1rem;;
   gap: 1rem;
 }
 
 .QR-image {
-  border-radius: 10px;
+  border-radius: 0.75rem;
+}
+
+.QR-code-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin: 0rem 1rem 1rem 1rem;
 }
 
 .QR-code-title {
   font-family: 'Outfit';
   font-weight: var(--fw-bold);
   color: var(--clr-darkBlue);
+  text-align: center;
 }
 
 .QR-code-info {
@@ -89,4 +98,5 @@ body {
   font-weight: var(--fw-regular);
   color: var(--clr-grayishBlue);
   font-size: var(--font-paragraph);
+  text-align: center;
 }
