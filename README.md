@@ -6,7 +6,7 @@ Welcome to my Frontend Mentor Challenges repository! 🌟
 This repository is dedicated to showcasing my solutions to the challenges provided by [Frontend Mentor](https://www.frontendmentor.io/challenges). Frontend Mentor offers a range of realistic front-end challenges designed to improve your coding skills by building real projects.
 
 ## Challenges Completed
-- None yet 😞
+- QR Code Component
 
 ## Technologies Used
 - HTML
