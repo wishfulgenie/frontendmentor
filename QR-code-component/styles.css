@@ -1,0 +1,55 @@
+/* Font Imports */
+@font-face {
+  font-family: 'Outfit';
+  font-display: swap;
+  font-weight: 400 700;
+  src: url('assets/fonts/outfit/Outfit-VariableFont_wght.ttf')
+       format('truetype')
+}
+
+/*
+  CSS Variables
+*/
+:root {
+  /* Layout */
+  --width-mobile: 375px;
+  --width-desktop: 1440;
+
+  /* Colours */
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-lightGray: hsl(212, 45%, 89%);
+  --clr-grayishBlue: hsl(220, 15%, 55%);
+  --clr-darkBlue: hsl(218, 44%, 22%);
+
+  /* Typography */
+  --font-paragraph: 15px;
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+/*
+  CSS Reset
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+#root, #__next {
+  isolation: isolate;
+}
