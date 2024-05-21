@@ -83,6 +83,18 @@ body {
   border-radius: 0.5rem;
 }
 
+.NFT-image-container:hover .eye {
+  opacity: 1;
+}
+
+.eye {
+  position: absolute;
+  top: 30%;
+  left: 47%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
 .NFT-title {
   font-family: 'Outfit';
   font-weight: var(--fw-bold);
