@@ -1,0 +1,58 @@
+/* Font Imports */
+@font-face {
+  font-family: 'Inter';
+  font-display: swap;
+  font-weight: 400 600 700;
+  src: url('assets/fonts/Inter-VariableFont_slnt\,wght.ttf')
+       format('truetype')
+}
+
+/*
+  CSS Variables
+*/
+:root {
+  /* Layout */
+  --width-mobile: 375px;
+  --width-desktop: 1440px;
+
+  /* Colours */
+  --clr-green: hsl(75, 94%, 57%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-grey: hsl(0, 0%, 20%);
+  --clr-darkGrey: hsl(0, 0%, 12%);
+  --clr-offBlack: hsl(0, 0%, 8%);
+
+  /* Typography */
+  --font-paragraph: 14px;
+  --fw-regular: 400;
+  --fw-bold: 600;
+  --fw-darkBold: 700;
+}
+
+/*
+  CSS Reset
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  padding: 0;
+}
+#root, #__next {
+  isolation: isolate;
+}
