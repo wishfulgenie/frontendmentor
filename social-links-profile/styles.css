@@ -17,7 +17,7 @@
 
   /* Colours */
   --clr-green: hsl(75, 94%, 57%);
-  --clr-white: hsl(0, 0%, 100%);
+  --clr-white: hsl(0, 0%, 85%);
   --clr-grey: hsl(0, 0%, 20%);
   --clr-darkGrey: hsl(0, 0%, 12%);
   --clr-offBlack: hsl(0, 0%, 8%);
@@ -65,6 +65,76 @@ body {
   height: 100vh;
   background-color: var(--clr-offBlack);
   gap: 20px;
+}
+
+.social-card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--clr-darkGrey);
+  padding: 2rem;
+  gap: 1rem;
+  border-radius: 1rem;
+}
+
+.social-card-image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.image {
+  width: 80px;
+  border-radius: 10rem;
+}
+
+.social-name {
+  text-align: center;
+  font-family: 'Inter';
+  font-weight: var(--fw-bold);
+  color: var(--clr-white);
+}
+
+.social-location {
+  text-align: center;
+  font-family: 'Inter';
+  font-size: var(--font-paragraph);
+  font-weight: var(--fw-bold);
+  color: var(--clr-green);
+}
+
+.social-card-info {
+  text-align: center;
+  font-family: 'Inter';
+  padding: 0rem 1rem 0rem 1rem;
+  font-size: var(--font-paragraph);
+  font-weight: var(--fw-regular);
+  color: var(--clr-white);
+}
+
+.social-card-links {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.social-card-link {
+  background: var(--clr-grey);
+  border-radius: 0.6rem;
+  border: none;
+  padding: 0.6rem;
+  box-shadow: none;
+  text-align: center;
+  color: var(--clr-white);
+  font-size: var(--font-paragraph);
+  font-weight: var(--fw-bold);
+  font-family: 'Inter';
+}
+
+.social-card-link:hover {
+  cursor: pointer;
+  color: var(--clr-offBlack);
+  background: var(--clr-green);
 }
 
 .attribution {
