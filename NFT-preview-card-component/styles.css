@@ -83,6 +83,10 @@ body {
   border-radius: 0.5rem;
 }
 
+.NFT-image:hover {
+  filter: invert(70%) sepia(90%) saturate(400%) hue-rotate(130deg) brightness(90%) contrast(90%);
+}
+
 .NFT-image-container:hover .eye {
   opacity: 1;
 }
@@ -92,7 +96,7 @@ body {
   top: 30%;
   left: 47%;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: opacity 0.1s ease;
 }
 
 .NFT-title {
