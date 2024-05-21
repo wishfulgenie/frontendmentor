@@ -94,7 +94,7 @@ body {
 .eye {
   position: absolute;
   top: 30%;
-  left: 47%;
+  left: 49%;
   opacity: 0;
   transition: opacity 0.1s ease;
 }
