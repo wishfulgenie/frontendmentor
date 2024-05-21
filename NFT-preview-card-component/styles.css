@@ -1,0 +1,59 @@
+/* Font Imports */
+@font-face {
+  font-family: 'Outfit';
+  font-display: swap;
+  font-weight: 300 400 700;
+  src: url('assets/fonts/Outfit-VariableFont_wght.ttf')
+       format('truetype')
+}
+
+/*
+  CSS Variables
+*/
+:root {
+  /* Layout */
+  --width-mobile: 375px;
+  --width-desktop: 1440;
+
+  /* Colours */
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-softBlue: hsl(215, 51%, 70%);
+  --clr-cyan: hsl(178, 100%, 50%);
+  --clr-darkBlueMain: hsl(217, 54%, 11%);
+  --clr-darkBlueCard: hsl(216, 50%, 16%);
+  --clr-darkBlueLine: hsl(215, 32%, 27%);
+
+  /* Typography */
+  --font-paragraph: 18px;
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-bold: 700;
+}
+
+/*
+  CSS Reset
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  padding: 0;
+}
+#root, #__next {
+  isolation: isolate;
+}
