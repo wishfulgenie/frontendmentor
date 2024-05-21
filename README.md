@@ -8,6 +8,7 @@ This repository is dedicated to showcasing my solutions to the challenges provid
 ## Challenges Completed
 - QR Code Component
 - Social Links Profile
+- NFT Preview Card Component
 
 ## Technologies Used
 - HTML
