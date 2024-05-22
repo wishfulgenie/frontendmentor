@@ -1,4 +1,5 @@
 import BannerImage from "../../assets/images/illustration-hero.svg"
+import MusicLogo from "../../assets/images/icon-music.svg"
 
 const OrderCard = () => {
   return (
@@ -11,14 +12,17 @@ const OrderCard = () => {
         </div>
         <div className="order-plan">
           <div className="plan-details">
-            <h3>Annual Plan</h3>
-            <p>$59.99/year</p>
+            <img width="45px" height="45px" src={MusicLogo} />
+            <div className="plan-details-text">
+              <h4>Annual Plan</h4>
+              <p>$59.99/year</p>
+            </div>
           </div>
           <button>Change</button>
         </div>
         <div className="button-display">
-          <button> Proceed to Payment </button>
-          <button> Change </button>
+          <button className="payment-button"> Proceed to Payment </button>
+          <button className="cancel-button"> Cancel Order </button>
         </div>
       </div>
     </div>
