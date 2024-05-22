@@ -38,6 +38,7 @@
 }
 * {
   margin: 0;
+  font-family: 'Red Hat Display';
 }
 body {
   line-height: 1.5;
@@ -96,7 +97,6 @@ body {
   flex-direction: column;
   gap: 1rem;
   padding: 0 1rem 0 1rem;
-  font-family: 'Red Hat Display';
   text-align: center
 }
 
@@ -130,7 +130,6 @@ body {
 .plan-details-text {
   display: flex;
   flex-direction: column;
-  font-family: 'Red Hat Display';
 }
 
 .plan-details-text h4 {
@@ -144,16 +143,15 @@ body {
   font-weight: var(--fw-regular);
 }
 
-.order-plan button {
+.change-button {
   all: unset;
   font-size: var(--font-paragraph);
   font-weight: var(--fw-bold);
-  font-family: 'Red Hat Display';
   color: var(--clr-brightBlue);
   text-decoration: underline;
 }
 
-.order-plan button:hover {
+.change-button:hover {
   cursor: pointer;
 }
 
@@ -163,16 +161,12 @@ body {
   gap: 0.75rem;
 }
 
-.button-display button {
+.payment-button {
   text-align: center;
-  font-family: 'Red Hat Display';
   font-size: var(--font-paragraph);
   font-weight: var(--fw-bold);
   border-radius: 1rem;
   border: 0rem;
-}
-
-.payment-button {
   background-color: var(--clr-brightBlue);
   padding: 13px 0 13px 0;
   box-shadow: 0 20px 8px var(--clr-paleBlue);
@@ -180,9 +174,13 @@ body {
 }
 
 .cancel-button {
+  text-align: center;
+  font-size: var(--font-paragraph);
+  font-weight: var(--fw-bold);
+  border-radius: 1rem;
+  border: 0rem;
   color: var(--clr-desaturatedBlue);
   background-color: var(--clr-white);
-  font-family: 'Red Hat Display';
   font-size: var(--font-paragraph);
   font-weight: var(--fw-bold);
   text-align: center;
@@ -194,7 +192,6 @@ body {
 }
 
 .attribution {
-  font-family: 'Red Hat Display';
   font-size: var(--font-paragraph);
   font-weight: var(--fw-regular);
   color: var(--clr-darkBlue);

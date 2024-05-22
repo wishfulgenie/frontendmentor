@@ -1,5 +1,9 @@
+/** SVG Imports */
 import BannerImage from "../../assets/images/illustration-hero.svg"
 import MusicLogo from "../../assets/images/icon-music.svg"
+
+/** Component Imports */
+import Button from "../components/Button"
 
 const OrderCard = () => {
   return (
@@ -18,11 +22,11 @@ const OrderCard = () => {
               <p>$59.99/year</p>
             </div>
           </div>
-          <button>Change</button>
+          <Button label={"Change"} className={"change-button"} />
         </div>
         <div className="button-display">
-          <button className="payment-button"> Proceed to Payment </button>
-          <button className="cancel-button"> Cancel Order </button>
+          <Button label={"Proceed to Payment"} className={"payment-button"} />
+          <Button label={"Cancel Order"} className={"cancel-button"} />
         </div>
       </div>
     </div>
