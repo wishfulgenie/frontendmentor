@@ -67,6 +67,10 @@ body {
   gap: 10px;
 }
 
+.order-card {
+  width: var(--width-mobile);
+}
+
 .attribution {
   font-family: 'Red Hat Display';
   font-size: var(--font-paragraph);
