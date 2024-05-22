@@ -165,7 +165,6 @@ body {
 
 .button-display button {
   text-align: center;
-  padding: 13px 0 13px 0;
   font-family: 'Red Hat Display';
   font-size: var(--font-paragraph);
   font-weight: var(--fw-bold);
@@ -175,13 +174,19 @@ body {
 
 .payment-button {
   background-color: var(--clr-brightBlue);
-  box-shadow: 0 8px 8px rgba(0, 0, 0, 0.2);
+  padding: 13px 0 13px 0;
+  box-shadow: 0 20px 8px var(--clr-paleBlue);
   color: var(--clr-white);
 }
 
 .cancel-button {
-  background-color: var(--clr-white);
   color: var(--clr-desaturatedBlue);
+  background-color: var(--clr-white);
+  font-family: 'Red Hat Display';
+  font-size: var(--font-paragraph);
+  font-weight: var(--fw-bold);
+  text-align: center;
+  margin-top: 20px;
 }
 
 .button-display button:hover {
