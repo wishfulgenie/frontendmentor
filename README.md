@@ -9,6 +9,7 @@ This repository is dedicated to showcasing my solutions to the challenges provid
 - QR Code Component
 - Social Links Profile
 - NFT Preview Card Component
+- Order Summary Component
 
 ## Technologies Used
 - HTML
