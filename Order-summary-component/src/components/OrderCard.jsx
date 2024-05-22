@@ -3,12 +3,13 @@ import BannerImage from "../../assets/images/illustration-hero.svg"
 
 /** Component Imports */
 import OrderPlan from "../components/OrderPlan"
-import Button from "../components/Button"
+import Button from "./Button"
+import Image from "./Image"
 
 const OrderCard = () => {
   return (
     <div className="card-and-banner">
-      <img className="order-banner" src={BannerImage} />
+      <Image src={BannerImage} className={"order-banner"} />
       <div className="order-card">
         <div className="order-summary">
           <h1> Order Summary </h1>
