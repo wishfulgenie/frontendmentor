@@ -1,6 +1,6 @@
-# Frontend Mentor - social links profile solution
+# Frontend Mentor - Order summary component solution
 
-This is a solution to the [Social links profile challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/social-links-profile-UG32l9m6dQ). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Order summary component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/order-summary-component-QlPmajDUj). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -16,13 +16,15 @@ This is a solution to the [Social links profile challenge on Frontend Mentor](ht
 
 ## My process
 
-- Iterative developmnet; starting with HTML structure, then adding accompanying CSS and adjsting to look like design
+- Iterative developmnet; starting with basic render UI tree, followed by realization in JSX, and finally adding CSS styling
 
 ### Built with
 
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
+- React
+- JSX
 
 ### Useful resources
 
