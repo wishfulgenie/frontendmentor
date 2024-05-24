@@ -83,10 +83,12 @@ body {
 
 .article-image {
   width: 400px;
+  border-radius: 1rem 0rem 0rem 1rem;
 }
 
 .article {
   padding: 2.5rem;
+  border-radius: 0rem 1rem 1rem 0rem;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -102,4 +104,56 @@ body {
   font-weight: var(--fw-regular);
   font-size: var(--font-paragraph);
   color: var(--clr-darkGrayishBlue);
+}
+
+.author-and-share {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 0.5rem;
+}
+
+.author {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+}
+
+.author-image {
+  width: 45px;
+  border-radius: 10rem;
+  border: 1px solid var(--clr-lightGrayishBlue);
+}
+
+.author-text h5 {
+  font-weight: var(--fw-bold);
+  color: var(--clr-darkGrayishBlue);
+}
+
+.author-text p {
+  font-weight: var(--fw-regular);
+  font-size: var(--font-paragraph);
+  color: var(--clr-grayishBlue);
+}
+
+.share-button {
+  background: var(--clr-lightGrayishBlue);
+  border-radius: 3rem;
+  padding: 8px;
+  justify-content: center;
+  border: 0;
+}
+
+.share-button-active {
+  background: var(--clr-darkGrayishBlue);
+  border-radius: 3rem;
+  padding: 8px;
+  justify-content: center;
+  border: 0;
+}
+
+.share-button:hover {
+
 }
