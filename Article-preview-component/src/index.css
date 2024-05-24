@@ -72,15 +72,6 @@ body {
   max-width: 900px;
 }
 
-@media (max-width: 900px) {
-  .article-and-image {
-    flex-direction: column;
-  }
-  .article {
-    max-width: 400px;
-  }
-}
-
 .article-image {
   width: 400px;
   border-radius: 1rem 0rem 0rem 1rem;
@@ -94,6 +85,21 @@ body {
   background-color: white;
   gap: 1rem;
 }
+
+@media (max-width: 900px) {
+  .article-and-image {
+    flex-direction: column;
+  }
+  .article-image {
+    border-radius: 1rem 1rem 0rem 0rem;
+  }
+  .article {
+    max-width: 400px;
+    padding: 2rem;
+    border-radius: 0rem 0rem 1rem 1rem;
+  }
+}
+
 
 .article-title {
   font-weight: var(--fw-bold);
