@@ -1,0 +1,56 @@
+/* Font Imports */
+@font-face {
+  font-family: 'Manrope';
+  font-display: swap;
+  font-weight: 500 700;
+  src: url('../assets/fonts/Manrope-VariableFont_wght.ttf')
+       format('truetype')
+}
+
+/*
+  CSS Variables
+*/
+:root {
+  /* Layout */
+  --width-mobile: 375px;
+  --width-desktop: 1440;
+
+  /* Colours */
+  --clr-darkGrayishBlue: hsl(217, 19%, 35%);
+  --clr-desaturatedDarkBlue: hsl(214, 17%, 51%);
+  --clr-grayishBlue: hsl(212, 23%, 69%);
+  --clr-lightGrayishBlue: hsl(210, 46%, 95%);
+
+  /* Typography */
+  --font-paragraph: 13px;
+  --fw-regular: 500;
+  --fw-bold: 700;
+}
+
+/*
+  CSS Reset
+*/
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+}
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+input, button, textarea, select {
+  font: inherit;
+}
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+  padding: 0;
+}
+#root, #__next {
+  isolation: isolate;
+}
