@@ -73,7 +73,7 @@ body {
 }
 
 .article-image {
-  width: 400px;
+  width: 350px;
   border-radius: 1rem 0rem 0rem 1rem;
 }
 
@@ -94,8 +94,9 @@ body {
     border-radius: 1rem 1rem 0rem 0rem;
   }
   .article {
-    max-width: 400px;
+    max-width: 350px;
     padding: 2rem;
+    gap: 1.5rem;
     border-radius: 0rem 0rem 1rem 1rem;
   }
 }

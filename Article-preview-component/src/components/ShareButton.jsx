@@ -1,8 +1,4 @@
-import { useState } from 'react';
-
 const ShareButton = ({ hover, shareDisplay, onHoverUpdate, onDisplayUpdate }) => {
-  const [isHovered, setIsHovered] = useState(false);
-  const [clicked, setClicked] = useState(false);
 
   const handleMouseEnter = () => {
     onHoverUpdate(true);
