@@ -106,12 +106,41 @@ body {
   color: var(--clr-darkGrayishBlue);
 }
 
+.share-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0.75rem 1rem 0.75rem 1rem;
+  align-items: center;
+  background: var(--clr-darkGrayishBlue);
+  border-radius: 0.5rem;
+}
+
+.links {
+  display: flex;
+  gap: 1.5rem;
+  flex-direction: row;
+  letter-spacing: 3px;
+  font-weight: var(--fw-bold);
+  font-size: var(--font-paragraph);
+  color: var(--clr-grayishBlue);
+}
+
+.clickable-links {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.clickable-link:hover {
+  cursor: pointer;
+}
+
 .author-and-share {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  border-radius: 0.5rem;
 }
 
 .author {

@@ -2,6 +2,9 @@ import { useState } from 'react';
 
 /** Image Imports */
 import Avatar from '../../assets/images/avatar-michelle.jpg'
+import Facebook from '../../assets/images/icon-facebook.svg'
+import Twitter from '../../assets/images/icon-twitter.svg'
+import Pinterest from '../../assets/images/icon-pinterest.svg'
 
 /** Component Imports */
 import Image from './Image'
@@ -21,6 +24,20 @@ const ShareArticle = ({}) => {
   }
 
   return (
+    shareDisplay 
+    ? 
+    <div className='share-links'>
+      <div className="links">
+        <p>SHARE</p>
+        <div className='clickable-links'>
+          <Image src={Facebook} className='clickable-link' />
+          <Image src={Twitter} className='clickable-link' />
+          <Image src={Pinterest} className='clickable-link' />
+        </div>
+      </div>
+      <button>Share</button>
+    </div> 
+    : 
     <div className='author-and-share'>
       <div className='author'>
         <Image src={Avatar} className='author-image' />
