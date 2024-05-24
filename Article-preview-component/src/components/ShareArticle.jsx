@@ -19,7 +19,6 @@ const ShareArticle = ({}) => {
   }
 
   const handleDisplayUpdate = () => {
-    console.log('display is now', shareDisplay);
     setShareDisplay(!shareDisplay);
   }
 
@@ -35,7 +34,7 @@ const ShareArticle = ({}) => {
           <Image src={Pinterest} className='clickable-link' />
         </div>
       </div>
-      <button>Share</button>
+      <ShareButton hover={hover} shareDisplay={shareDisplay} onHoverUpdate={handleHoverUpdate} onDisplayUpdate={handleDisplayUpdate}/>
     </div> 
     : 
     <div className='author-and-share'>
@@ -46,7 +45,7 @@ const ShareArticle = ({}) => {
           <p className='publish-date'> 28 Jun 2020 </p>
         </div>
       </div>
-      <ShareButton hover={hover} onHoverUpdate={handleHoverUpdate} onDisplayUpdate={handleDisplayUpdate}/>
+      <ShareButton hover={hover} shareDisplay={shareDisplay} onHoverUpdate={handleHoverUpdate} onDisplayUpdate={handleDisplayUpdate}/>
     </div>
   )
 }
