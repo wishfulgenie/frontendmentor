@@ -154,6 +154,6 @@ body {
   border: 0;
 }
 
-.share-button:hover {
-
+.share-button-active:hover {
+  cursor: pointer;
 }
