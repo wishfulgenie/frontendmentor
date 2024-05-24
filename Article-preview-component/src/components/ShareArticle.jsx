@@ -1,3 +1,5 @@
+import { useState } from 'react';
+
 /** Image Imports */
 import Avatar from '../../assets/images/avatar-michelle.jpg'
 
@@ -6,6 +8,18 @@ import Image from './Image'
 import ShareButton from './ShareButton'
 
 const ShareArticle = ({}) => {
+  const [hover, setHover] = useState(false);
+  const [shareDisplay, setShareDisplay] = useState(false);
+
+  const handleHoverUpdate = (newState) => {
+    setHover(newState);
+  }
+
+  const handleDisplayUpdate = () => {
+    console.log('display is now', shareDisplay);
+    setShareDisplay(!shareDisplay);
+  }
+
   return (
     <div className='author-and-share'>
       <div className='author'>
@@ -15,7 +29,7 @@ const ShareArticle = ({}) => {
           <p className='publish-date'> 28 Jun 2020 </p>
         </div>
       </div>
-      <ShareButton />
+      <ShareButton hover={hover} onHoverUpdate={handleHoverUpdate} onDisplayUpdate={handleDisplayUpdate}/>
     </div>
   )
 }
