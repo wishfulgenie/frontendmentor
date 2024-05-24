@@ -146,6 +146,10 @@ body {
   border: 0;
 }
 
+.share-button:hover {
+  cursor: pointer;
+}
+
 .share-button-active {
   background: var(--clr-darkGrayishBlue);
   border-radius: 3rem;
