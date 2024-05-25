@@ -47,6 +47,11 @@
   border-radius: 2rem;
 }
 
+.submit:hover {
+  color: var(--clr-veryDarkBlue);
+  background: var(--clr-white);
+}
+
 .submit span {
   margin-top: 4px;
 }
