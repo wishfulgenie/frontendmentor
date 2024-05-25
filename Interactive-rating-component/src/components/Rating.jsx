@@ -10,7 +10,7 @@ import Image from './Image';
 /* Image Imports */
 import Star from '../../assets/images/icon-star.svg'
 
-const Rating = () => {
+const Rating = ({ onSubmissionUpdate }) => {
   const [rating, setRating] = useState(null);
 
   const ratings = [1, 2, 3, 4, 5]
@@ -39,7 +39,7 @@ const Rating = () => {
         />
       ))}
       </div>
-      <Button label={"Submit"} type="submit" active={false} />
+      <Button label={"Submit"} type="submit" active={false} onClick={onSubmissionUpdate} />
     </div>
   )
 }

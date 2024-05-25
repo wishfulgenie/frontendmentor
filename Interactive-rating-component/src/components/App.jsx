@@ -4,9 +4,18 @@ import { useState } from 'react';
 import Rating from './Rating'
 
 const App = () => {
+  const [submitted, setSubmitted] = useState(false);
+
+  const handleSubmissionUpdate = () => {
+    console.log('updated submission state')
+    setSubmitted(true);
+  }
+
   return (
     <>
-      <Rating />
+      {submitted 
+        ? ''
+        : <Rating onSubmissionUpdate={handleSubmissionUpdate}/>}
     </>
   )
 }
