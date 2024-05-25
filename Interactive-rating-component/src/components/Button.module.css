@@ -1,0 +1,29 @@
+/* Variable Imports */
+@import '../variables.css';
+
+.button {
+  all: unset;
+  cursor: pointer;
+}
+
+.rate {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: var(--font-paragraph);
+  font-weight: var(--fw-bold);
+  color: var(--clr-lightGrey);
+  background: var(--clr-darkBlue);
+}
+
+.rate:hover {
+  color: var(--clr-darkBlue);
+  background: var(--clr-orange);
+}
