@@ -7,10 +7,9 @@
 }
 
 .rate {
-  display: inline-flex;
+  display: flex;
   justify-content: center;
   align-items: center;
-  text-align: center;
   height: 45px;
   width: 45px;
   border-radius: 50%;
@@ -23,7 +22,31 @@
   background: var(--clr-darkBlue);
 }
 
+.rate span {
+  margin-top: 2px;
+}
+
 .rate:hover {
   color: var(--clr-darkBlue);
   background: var(--clr-orange);
+}
+
+.submit {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: normal;
+  padding: 0.6rem 0rem 0.6rem 0rem;
+  font-size: var(--font-paragraph);
+  font-weight: var(--fw-bold);
+  color: var(--clr-veryDarkBlue);
+  background: var(--clr-orange);
+  border-radius: 2rem;
+}
+
+.submit span {
+  margin-top: 4px;
 }

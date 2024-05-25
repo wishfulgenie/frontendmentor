@@ -56,7 +56,7 @@ body {
   background-color: var(--clr-veryDarkBlue);
   padding: 2rem;
   border-radius: 1rem;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .rating-message {
