@@ -1,7 +1,7 @@
 import { useState } from 'react';
 
 /* Component Imports */
-import Rating from './Rating'
+import Rating from './Rating/Rating'
 
 const App = () => {
   const [submitted, setSubmitted] = useState(false);

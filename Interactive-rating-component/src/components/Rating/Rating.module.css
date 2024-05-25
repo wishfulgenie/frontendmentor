@@ -1,5 +1,5 @@
 /* Variable Imports */
-@import '../variables.css';
+@import '../../variables.css';
 
 .interactive-rating-display {
   display: flex;

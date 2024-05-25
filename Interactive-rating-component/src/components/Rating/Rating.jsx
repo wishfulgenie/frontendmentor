@@ -4,11 +4,11 @@ import { useState } from 'react';
 import styles from './Rating.module.css'
 
 /* Component Imports */
-import Button from './Button';
-import Image from './Image';
+import Button from '../Button/Button';
+import Image from '../Image/Image';
 
 /* Image Imports */
-import Star from '../../assets/images/icon-star.svg'
+import Star from '../../../assets/images/icon-star.svg'
 
 const Rating = ({ onSubmissionUpdate }) => {
   const [rating, setRating] = useState(null);
