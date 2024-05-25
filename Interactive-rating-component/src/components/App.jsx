@@ -9,11 +9,16 @@ import Star from '../../assets/images/icon-star.svg'
 
 const App = () => {
   const [rating, setRating] = useState(null);
+  const [submitted, setSubmitted] = useState(false);
 
   const ratings = [1, 2, 3, 4, 5]
 
   const handleUpdateRating = (newRating) => {
     setRating(newRating)
+  }
+
+  const handleUpdateSubmission = () => {
+    setSubmitted(true);
   }
 
   return (
@@ -32,11 +37,11 @@ const App = () => {
           label={value}
           type="rate"
           active={rating === value}
-          onUpdateRating={handleUpdateRating}
+          onClick={handleUpdateRating}
         />
       ))}
       </div>
-      <Button label={"Submit"} type="submit" active={false} />
+      <Button label={"Submit"} type="submit" active={false} onClick={handleUpdateSubmission} />
     </div>
   )
 }
