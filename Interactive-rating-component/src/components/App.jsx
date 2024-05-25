@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 /* Component Imports */
 import Rating from './Rating/Rating'
+import Response from './Response/Response'
 
 const App = () => {
   const [submitted, setSubmitted] = useState(false);
@@ -18,7 +19,7 @@ const App = () => {
   return (
     <>
       {submitted 
-        ? ''
+        ? <Response rating={rating} />
         : <Rating rating={rating} onUpdateRating={handleUpdateRating}onSubmissionUpdate={handleSubmissionUpdate}/>}
     </>
   )
