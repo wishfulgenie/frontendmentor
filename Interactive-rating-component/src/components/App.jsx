@@ -5,17 +5,21 @@ import Rating from './Rating/Rating'
 
 const App = () => {
   const [submitted, setSubmitted] = useState(false);
+  const [rating, setRating] = useState(null);
 
   const handleSubmissionUpdate = () => {
-    console.log('updated submission state')
     setSubmitted(true);
+  }
+
+  const handleUpdateRating = (newRating) => {
+    setRating(newRating)
   }
 
   return (
     <>
       {submitted 
         ? ''
-        : <Rating onSubmissionUpdate={handleSubmissionUpdate}/>}
+        : <Rating rating={rating} onUpdateRating={handleUpdateRating}onSubmissionUpdate={handleSubmissionUpdate}/>}
     </>
   )
 }

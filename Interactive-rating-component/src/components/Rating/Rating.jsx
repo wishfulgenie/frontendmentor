@@ -1,5 +1,3 @@
-import { useState } from 'react';
-
 /* Styling imports */
 import styles from './Rating.module.css'
 
@@ -10,14 +8,8 @@ import Image from '../Image/Image';
 /* Image Imports */
 import Star from '../../../assets/images/icon-star.svg'
 
-const Rating = ({ onSubmissionUpdate }) => {
-  const [rating, setRating] = useState(null);
-
+const Rating = ({ rating, onUpdateRating, onSubmissionUpdate,  }) => {
   const ratings = [1, 2, 3, 4, 5]
-
-  const handleUpdateRating = (newRating) => {
-    setRating(newRating)
-  }
 
   return (
     <div className={styles['interactive-rating-display']}>
@@ -35,7 +27,7 @@ const Rating = ({ onSubmissionUpdate }) => {
           label={value}
           type="rate"
           active={rating === value}
-          onClick={handleUpdateRating}
+          onClick={onUpdateRating}
         />
       ))}
       </div>
