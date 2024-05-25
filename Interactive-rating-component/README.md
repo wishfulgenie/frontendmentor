@@ -21,6 +21,7 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 ### Built with
 
 - Semantic HTML5 markup
+- CSS Modules
 - Flexbox
 - React
 - JSX
