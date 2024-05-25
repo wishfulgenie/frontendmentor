@@ -1,0 +1,62 @@
+/* Variable Imports */
+@import '../../variables.css';
+
+.button {
+  all: unset;
+  cursor: pointer;
+}
+
+.rate {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  border: none;
+  padding: 0;
+  margin: 0;
+  font-size: var(--font-paragraph);
+  font-weight: var(--fw-bold);
+  color: var(--clr-lightGrey);
+  background: var(--clr-darkBlue);
+}
+
+.rate span {
+  margin-top: 3px;
+}
+
+.rate:hover {
+  color: var(--clr-darkBlue);
+  background: var(--clr-orange);
+}
+
+.active {
+  color: var(--clr-veryDarkBlue);
+  background: var(--clr-white);
+}
+
+.submit {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  line-height: normal;
+  padding: 0.6rem 0rem 0.6rem 0rem;
+  font-size: var(--font-paragraph);
+  font-weight: var(--fw-bold);
+  color: var(--clr-veryDarkBlue);
+  background: var(--clr-orange);
+  border-radius: 2rem;
+}
+
+.submit:hover {
+  color: var(--clr-veryDarkBlue);
+  background: var(--clr-white);
+}
+
+.submit span {
+  margin-top: 5px;
+}

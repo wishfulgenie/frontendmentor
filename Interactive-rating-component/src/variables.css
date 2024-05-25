@@ -1,0 +1,20 @@
+/*
+  CSS Variables
+*/
+:root {
+  /* Layout */
+  --width-mobile: 375px;
+  --width-desktop: 1440;
+
+  /* Colours */
+  --clr-orange: hsl(25, 97%, 53%);
+  --clr-white: hsl(0, 0%, 100%);
+  --clr-lightGrey: hsl(217, 12%, 63%);
+  --clr-darkBlue: hsl(213, 19%, 18%);
+  --clr-veryDarkBlue: hsl(216, 12%, 8%);
+
+  /* Typography */
+  --font-paragraph: 14px;
+  --fw-regular: 400;
+  --fw-bold: 700;
+}

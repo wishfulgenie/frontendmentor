@@ -1,0 +1,44 @@
+/* Variable Imports */
+@import '../../variables.css';
+
+.interactive-rating-display {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  background-color: var(--clr-veryDarkBlue);
+  padding: 2rem;
+  border-radius: 1rem;
+  gap: 1.5rem;
+}
+
+.star-image {
+  align-self: flex-start;
+  padding: 15px;
+  border-radius: 50%;
+  background: var(--clr-darkBlue);
+  cursor: pointer;
+}
+
+.rating-message {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.display-title {
+  color: var(--clr-white);
+  font-weight: var(--fw-bold);
+}
+
+.display-message {
+  color: var(--clr-lightGrey);
+  font-weight: var(--fw-regular);
+  font-size: var(--font-paragraph);
+}
+
+.rating-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+}

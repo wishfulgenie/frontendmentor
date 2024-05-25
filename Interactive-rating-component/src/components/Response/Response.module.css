@@ -1,0 +1,46 @@
+/* Variable Imports */
+@import '../../variables.css';
+
+.thank-you-display {
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+  background-color: var(--clr-veryDarkBlue);
+  padding: 2rem;
+  border-radius: 1rem;
+  gap: 1.5rem;
+}
+
+.response-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.response-message {
+  color: var(--clr-orange);
+  font-weight: var(--fw-regular);
+  font-size: var(--font-paragraph);
+  background: var(--clr-darkBlue);
+  padding: 5px 15px 2px 15px;
+  border-radius: 3rem;
+}
+
+.thank-you-message {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: center;
+}
+
+.thank-you-title {
+  color: var(--clr-white);
+  font-weight: var(--fw-bold);
+}
+
+.thank-you-message {
+  color: var(--clr-lightGrey);
+  font-weight: var(--fw-regular);
+  font-size: var(--font-paragraph);
+}
