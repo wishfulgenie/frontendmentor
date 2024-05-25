@@ -59,6 +59,14 @@ body {
   gap: 1.5rem;
 }
 
+.star-image {
+  align-self: flex-start;
+  padding: 15px;
+  border-radius: 50%;
+  background: var(--clr-darkBlue);
+  cursor: pointer;
+}
+
 .rating-message {
   display: flex;
   flex-direction: column;
