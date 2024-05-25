@@ -16,12 +16,12 @@ This is a solution to the [Interactive rating component challenge on Frontend Me
 
 ## My process
 
-- Iterative developmnet; starting with basic render UI tree, then CSS and JSX via styled components done in parallel
+- Iterative developmnet; starting with basic render UI tree, then CSS and JSX together
 
 ### Built with
 
 - Semantic HTML5 markup
-- Styled-components
+- CSS
 - Flexbox
 - React
 - JSX
