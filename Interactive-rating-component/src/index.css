@@ -1,3 +1,12 @@
+/* Font Imports */
+@font-face {
+  font-family: 'Overpass';
+  font-display: swap;
+  font-weight: 400 700;
+  src: url('../assets/fonts/Overpass-VariableFont_wght.ttf')
+       format('truetype')
+}
+
 /*
   CSS Reset
 */
@@ -6,6 +15,7 @@
 }
 * {
   margin: 0;
+  font-family: 'Overpass';
 }
 body {
   line-height: 1.5;
