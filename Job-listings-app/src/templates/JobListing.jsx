@@ -9,7 +9,7 @@ const JobListing = ({ job, filterSelection, updateFilterSelection }) => {
   const reqs = [...job.languages, ...job.tools]
 
   return (
-    <div className={styles['job-listing']}>
+    <div className={job.featured ? styles['job-listing-featured'] : styles['job-listing']}>
       <div className={styles['job-listing-logo-info']}>
         <img src={`../../assets/images/${job.logo}`} className={styles['logo']} />
         <JobListingInfo job={job} />
