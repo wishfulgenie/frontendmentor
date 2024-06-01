@@ -43,7 +43,7 @@ const App = () => {
   }
 
   return (
-    <div className='job-app'>
+    <div className={displayFilterPanel ? 'job-app' : 'job-app-empty'}>
       {displayFilterPanel &&
         <JobFilterPanel 
           filterSelection={filterSelection}

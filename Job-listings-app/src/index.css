@@ -68,6 +68,13 @@ body {
   gap: 2rem;
 }
 
+.job-app-empty {
+  margin-top: 12rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
 .attribution {
   color: var(--clr-darkGrayishCyan)
 }
