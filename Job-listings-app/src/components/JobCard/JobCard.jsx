@@ -1,12 +1,20 @@
 /* Styling imports */
 import styles from './JobCard.module.css'
 
+const CompanyChip = ({ label, className }) => {
+  return (
+    <div className={styles[className]}>
+      <span>{label}</span>
+    </div>
+  )
+}
+
 const JobCardCompany = ({ company, newJob, featuredJob }) => {
   return (
     <div className={styles['job-card-company']}>
       <p className={styles['company-role']}> {company} </p>
-        {newJob && <span className={styles['new-status']}>new!</span>}
-        {featuredJob && <span className={styles['featured-status']}>featured</span>}
+        {newJob && <CompanyChip label={'new!'} className={'new-status'}/>}
+        {featuredJob && <CompanyChip label={'featured'} className={'featured-status'}/>}
     </div>
   )
 }

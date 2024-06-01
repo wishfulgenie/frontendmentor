@@ -37,22 +37,24 @@
   color: var(--clr-desaturedDarkCyan);
 }
 
+/* CompanyChip styles */
 .new-status {
+  display: inline-block;
   font-weight: var(--fw-bold);
   font-size: 12px;
-  color: var(--clr-lightGrayishCyanTablet);
-  border-radius: 10px;
-  padding: 3px;
   text-transform: uppercase;
+  padding: 5px 5px 0px 5px;
+  border-radius: 3rem;
+  color: var(--clr-lightGrayishCyanTablet);
   background-color: var(--clr-desaturedDarkCyan);
 }
 
 .featured-status {
   font-weight: var(--fw-bold);
   font-size: 12px;
-  color: var(--clr-lightGrayishCyanTablet);
-  border-radius: 10px;
-  padding: 3px;
   text-transform: uppercase;
+  padding: 5px 5px 0px 5px;
+  border-radius: 3rem;
+  color: var(--clr-lightGrayishCyanTablet);
   background-color: var(--clr-veryDarkGrayishCyan);
 }
