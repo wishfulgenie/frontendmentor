@@ -26,3 +26,31 @@
 .clicked:hover {
   cursor: pointer;
 }
+
+.removable-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.removable-text-container {
+  font-size: var(--font-paragraph);
+  font-weight: var(--fw-bold);
+  color: var(--clr-desaturedDarkCyan);
+  background-color: var(--clr-lightGrayishCyanTablet);
+  padding: 3px 5px 0px 5px;
+  border-radius: 3px 0px 0px 3px;
+}
+
+.removable-icon-container {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 0px 3px 3px 0px;
+  background-color: var(--clr-desaturedDarkCyan);
+}
+
+.removable-icon-container:hover {
+  cursor: pointer;
+  background-color: var(--clr-veryDarkGrayishCyan);
+}

@@ -21,7 +21,21 @@ const ClickableChip = ({ label, type, clicked, onClickHandler }) => {
   }
 
   const renderRemoveFilter = () => {
-
+    return (
+      <div className={styles['removable-container']}>
+        <div className={styles['removable-text-container']}>
+          {label}
+        </div>
+        <div 
+          className={styles['removable-icon-container']}
+          onClick={(e) => onClickHandler(e, 'remove', label)}
+        >
+          <img 
+            src={removeIcon}
+          />
+        </div>
+      </div>
+    )
   }
 
   const renderClearFilters = () => {
