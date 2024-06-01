@@ -12,7 +12,6 @@ const JobListingReqs = ({ reqs, filterSelection, updateFilterSelection }) => {
         key={req}
         label={req} 
         type={'add'}
-        clicked={filterSelection.includes(req)}
         onClickHandler={updateFilterSelection}
       />
       )}

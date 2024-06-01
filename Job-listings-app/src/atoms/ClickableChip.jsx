@@ -4,7 +4,7 @@ import styles from './ClickableChip.module.css'
 /* Image Imports */
 import removeIcon from '../../assets/images/icon-remove.svg'
 
-const ClickableChip = ({ label, type, clicked, onClickHandler }) => {
+const ClickableChip = ({ label, type, onClickHandler }) => {
 
   const renderAddFilter = () => {
     return (
@@ -48,7 +48,7 @@ const ClickableChip = ({ label, type, clicked, onClickHandler }) => {
 
   return (
     <>
-      {type === 'add' && renderAddFilter(clicked)}
+      {type === 'add' && renderAddFilter()}
       {type === 'remove' && renderRemoveFilter()}
       {type === 'clear' && renderClearFilters()}
     </>
