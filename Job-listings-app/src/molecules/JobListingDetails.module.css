@@ -1,0 +1,10 @@
+/* Variable Imports */
+@import '../variables.css';
+
+.job-listing-details {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  color: var(--clr-darkGrayishCyan);
+  line-height: 1;
+}

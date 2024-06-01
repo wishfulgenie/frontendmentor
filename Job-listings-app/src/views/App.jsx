@@ -4,7 +4,7 @@ import { useState } from 'react'
 import data from '../data.json'
 
 /* Component Imports */
-import JobListingHeader from '../molecules/JobListingHeader'
+import JobListingDetails from '../molecules/JobListingDetails'
 
 const App = () => {
   const [jobList, setJobList] = useState([data[0]])
@@ -18,7 +18,7 @@ const App = () => {
 
   return (
     <div className='job-app'>
-      <p> Hello </p>
+      <JobListingDetails postedAt={'1d ago'} contract={'Full Time'} location={'USA only'} />
     </div>
   )
 }
