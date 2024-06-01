@@ -62,7 +62,10 @@ body {
 }
 
 .job-app {
-  margin-top: 10rem;
+  margin-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .attribution {
