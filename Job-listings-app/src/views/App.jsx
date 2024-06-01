@@ -13,7 +13,6 @@ const App = () => {
 
   const displayFilterPanel = filterSelection.length !== 0
 
-  // TODO: Limit to a maximum of 8 filters
   const updateFilterSelection = (e, action, data) => {
     e.preventDefault()
     console.log(`action: ${action}, data: ${data}`)
@@ -42,6 +41,16 @@ const App = () => {
     }
   }
 
+  const performFilter = (job, filterSelection) => {
+    const jobReqs = [...job.tools, ...job.languages]
+    for (const filter of filterSelection) {
+      if (!jobReqs.includes(filter)) {
+        return false;
+      }
+    }
+    return true
+  }
+
   return (
     <div className={displayFilterPanel ? 'job-app' : 'job-app-empty'}>
       {displayFilterPanel &&
@@ -50,16 +59,17 @@ const App = () => {
           updateFilterSelection={updateFilterSelection}
         />
       }
-      {jobList.map(
-        (job) => 
+      {jobList
+      .filter((job) => performFilter(job, filterSelection))
+      .map((job) => 
           <JobListing
             key={job.id} 
             job={job} 
             filterSelection={filterSelection} 
             updateFilterSelection={updateFilterSelection}
           />
-      )}
-      
+        )
+      }
     </div>
   )
 }
