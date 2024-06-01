@@ -43,7 +43,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   background-color: var(--clr-lightGrayishCyanBackground);
   height: 100vh;
   gap: 1rem;
@@ -58,6 +57,11 @@ body {
   background-image: url('../assets/images/bg-header-desktop.svg');
   background-color: var(--clr-desaturedDarkCyan);
   background-position: top center;
+  z-index: -1;
+}
+
+.job-app {
+  margin-top: 10rem;
 }
 
 .attribution {
