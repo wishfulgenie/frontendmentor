@@ -1,8 +1,5 @@
 import { useState } from 'react'
 
-/* Component Imports */
-import JobList from './JobList'
-
 /* Data Import */
 import data from '../data.json'
 
@@ -12,7 +9,7 @@ const App = () => {
 
   return (
     <div className='job-app'>
-      <JobList jobList={jobList} />
+      
     </div>
   )
 }
