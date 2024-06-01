@@ -4,21 +4,29 @@ import { useState } from 'react'
 import data from '../data.json'
 
 /* Component Imports */
-import JobListingDetails from '../molecules/JobListingDetails'
+import JobListingReqs from '../molecules/JobListingReqs'
 
 const App = () => {
-  const [jobList, setJobList] = useState([data[0]])
+  const [jobList, setJobList] = useState([data[1]])
   const [filterSelection, setFilterSelection] = useState(['TypeScript'])
 
   // TODO
   const updateFilterSelection = (e, action, data) => {
     e.preventDefault()
     console.log(`action: ${action}, data: ${data}`)
+    if (action === 'add') {
+      if (!filterSelection.includes(data)) {
+        console.log('added')
+        setFilterSelection(filterSelection.concat(data))
+      }
+    } else {
+      setFilterSelection(filterSelection.filter((sel) => sel !== data))
+    }
   }
 
   return (
     <div className='job-app'>
-      <JobListingDetails postedAt={'1d ago'} contract={'Full Time'} location={'USA only'} />
+      <p> Hello </p>
     </div>
   )
 }

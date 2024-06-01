@@ -62,6 +62,7 @@ body {
 }
 
 .job-app {
+  max-width: 800px;
   margin-top: 10rem;
 }
 

@@ -1,0 +1,9 @@
+/* Variable Imports */
+@import '../variables.css';
+
+
+.job-listing-requirements {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
