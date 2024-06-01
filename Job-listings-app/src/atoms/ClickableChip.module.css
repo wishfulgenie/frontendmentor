@@ -1,0 +1,28 @@
+/* Variable Imports */
+@import '../variables.css';
+
+.clickable {
+  font-size: var(--font-paragraph);
+  font-weight: var(--fw-bold);
+  color: var(--clr-desaturedDarkCyan);
+  padding: 3px 5px 0px 5px;
+  border-radius: 3px;
+  background-color: var(--clr-lightGrayishCyanTablet);
+}
+
+.clickable:hover {
+  cursor: pointer;
+}
+
+.clicked {
+  font-size: var(--font-paragraph);
+  font-weight: var(--fw-bold);
+  color: white;
+  padding: 3px 5px 0px 5px;
+  border-radius: 3px;
+  background-color: var(--clr-desaturedDarkCyan);
+}
+
+.clicked:hover {
+  cursor: pointer;
+}
