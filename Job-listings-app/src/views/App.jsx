@@ -4,10 +4,10 @@ import { useState } from 'react'
 import data from '../data.json'
 
 /* Component Imports */
-import JobFilters from '../molecules/JobFilters'
+import JobListingInfo from '../organisms/JobListingInfo'
 
 const App = () => {
-  const [jobList, setJobList] = useState([data[1]])
+  const [jobList, setJobList] = useState(data)
   const [filterSelection, setFilterSelection] = useState(['TypeScript', 'JavaScript', 'React', 'Python'])
 
   // TODO
@@ -19,8 +19,10 @@ const App = () => {
         console.log('added')
         setFilterSelection(filterSelection.concat(data))
       }
-    } else {
+    } else if (action === 'remove') {
       setFilterSelection(filterSelection.filter((sel) => sel !== data))
+    } else {
+      setFilterSelection([])
     }
   }
 
