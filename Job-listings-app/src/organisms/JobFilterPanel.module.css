@@ -1,0 +1,15 @@
+/* Variable Imports */
+@import '../variables.css';
+
+.job-filter-panel {
+  width: 1000px;
+  min-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
+  padding: 1rem 2rem 1rem 2rem;
+  border-radius: 5px;
+  background-color: white;
+}

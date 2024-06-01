@@ -1,0 +1,8 @@
+/* Variable Imports */
+@import '../variables.css';
+
+.job-filters {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+}

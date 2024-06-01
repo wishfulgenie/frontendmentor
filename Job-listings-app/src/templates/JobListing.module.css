@@ -1,0 +1,41 @@
+/* Variable Imports */
+@import '../variables.css';
+
+.job-listing {
+  width: 1000px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 6px;
+  box-shadow: -5px 10px 10px -2px rgba(0, 0, 0, 0.1);
+}
+
+.job-listing-featured {
+  width: 1000px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 6px;
+  border-left: 6px solid var(--clr-desaturedDarkCyan);
+  box-shadow: -5px 10px 10px -2px rgba(0, 0, 0, 0.1);
+}
+
+.job-listing-logo-info {
+  display: flex;
+  min-width: 500px;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  max-width: 100px;
+  height: auto;
+  display: block;
+}

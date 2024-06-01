@@ -1,0 +1,20 @@
+/*
+  CSS Variables
+*/
+:root {
+  /* Layout */
+  --width-mobile: 375px;
+  --width-desktop: 1440;
+
+  /* Colours */
+  --clr-desaturedDarkCyan: hsl(180, 29%, 50%);
+  --clr-lightGrayishCyanBackground: hsl(180, 52%, 96%);
+  --clr-lightGrayishCyanTablet: hsl(180, 31%, 95%);
+  --clr-darkGrayishCyan: hsl(180, 8%, 52%);
+  --clr-veryDarkGrayishCyan: hsl(180, 14%, 20%);
+
+  /* Typography */
+  --font-paragraph: 15px;
+  --fw-regular: 500;
+  --fw-bold: 700;
+}
