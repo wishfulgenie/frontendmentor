@@ -38,14 +38,14 @@
   font-weight: var(--fw-bold);
   color: var(--clr-desaturedDarkCyan);
   background-color: var(--clr-lightGrayishCyanTablet);
-  padding: 3px 6px 0px 5px;
+  padding: 3px 6px 0px 8px;
   border-radius: 3px 0px 0px 3px;
 }
 
 .removable-icon-container {
   display: flex;
   align-items: center;
-  padding: 5px;
+  padding: 6px 5px 5px 5px;
   border-radius: 0px 3px 3px 0px;
   background-color: var(--clr-desaturedDarkCyan);
 }

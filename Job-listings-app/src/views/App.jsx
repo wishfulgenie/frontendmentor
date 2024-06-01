@@ -4,13 +4,15 @@ import { useState } from 'react'
 import data from '../data.json'
 
 /* Component Imports */
-import JobListingInfo from '../organisms/JobListingInfo'
+import JobFilterPanel from '../organisms/JobFilterPanel'
 
 const App = () => {
   const [jobList, setJobList] = useState(data)
-  const [filterSelection, setFilterSelection] = useState(['TypeScript', 'JavaScript', 'React', 'Python'])
+  const [filterSelection, setFilterSelection] = useState(
+    ['TypeScript', 'React', 'JavaScript', 'Python', 'Full Stack', 'CSS']
+  )
 
-  // TODO
+  // TODO: Limit to a maximum of 8 filters
   const updateFilterSelection = (e, action, data) => {
     e.preventDefault()
     console.log(`action: ${action}, data: ${data}`)
@@ -28,7 +30,7 @@ const App = () => {
 
   return (
     <div className='job-app'>
-      <p> Hello </p>
+      <p>Hello</p>
     </div>
   )
 }
