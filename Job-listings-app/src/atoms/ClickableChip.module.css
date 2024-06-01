@@ -54,3 +54,16 @@
   cursor: pointer;
   background-color: var(--clr-veryDarkGrayishCyan);
 }
+
+.clearable {
+  font-size: var(--font-paragraph);
+  font-weight: var(--fw-bold);
+  color: var(--clr-desaturedDarkCyan);
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+.clearable:hover {
+  cursor: pointer;
+  color: var(--clr-veryDarkGrayishCyan);
+}

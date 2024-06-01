@@ -39,7 +39,14 @@ const ClickableChip = ({ label, type, clicked, onClickHandler }) => {
   }
 
   const renderClearFilters = () => {
-
+    return (
+      <div
+        className={styles['clearable']}
+        onClick={(e) => onClickHandler(e, 'clear', label)}
+      >
+        {label}
+      </div>
+    )
   }
 
   return (

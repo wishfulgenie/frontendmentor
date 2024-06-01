@@ -13,11 +13,16 @@ const App = () => {
   // TODO
   const updateFilterSelection = (e, action, data) => {
     e.preventDefault()
+    console.log(`action: ${action}, data: ${data}`)
   }
 
   return (
     <div className='job-app'>
-      <p> Hello </p>
+      <ClickableChip
+        label={'Clear'}
+        type={'clear'}
+        onClickHandler={updateFilterSelection}
+      />
     </div>
   )
 }
