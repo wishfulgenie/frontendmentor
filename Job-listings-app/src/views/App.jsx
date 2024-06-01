@@ -4,7 +4,7 @@ import { useState } from 'react'
 import data from '../data.json'
 
 /* Component Imports */
-import JobFilterPanel from '../organisms/JobFilterPanel'
+import JobListing from '../templates/JobListing'
 
 const App = () => {
   const [jobList, setJobList] = useState(data)
@@ -30,7 +30,11 @@ const App = () => {
 
   return (
     <div className='job-app'>
-      <p>Hello</p>
+      <JobListing 
+        job={jobList[0]} 
+        filterSelection={filterSelection} 
+        updateFilterSelection={updateFilterSelection}
+      />
     </div>
   )
 }

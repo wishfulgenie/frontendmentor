@@ -1,0 +1,27 @@
+/* Variable Imports */
+@import '../variables.css';
+
+.job-listing {
+  width: 1000px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.job-listing-logo-info {
+  display: flex;
+  min-width: 500px;
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo {
+  max-width: 100px;
+  height: auto;
+  display: block;
+}
