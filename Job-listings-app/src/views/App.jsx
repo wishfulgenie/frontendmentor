@@ -4,7 +4,7 @@ import { useState } from 'react'
 import data from '../data.json'
 
 /* Component Imports */
-import ClickableChip from '../atoms/ClickableChip'
+import JobListingHeader from '../molecules/JobListingHeader'
 
 const App = () => {
   const [jobList, setJobList] = useState([data[0]])
@@ -18,11 +18,7 @@ const App = () => {
 
   return (
     <div className='job-app'>
-      <ClickableChip
-        label={'Clear'}
-        type={'clear'}
-        onClickHandler={updateFilterSelection}
-      />
+      <p> Hello </p>
     </div>
   )
 }

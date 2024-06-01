@@ -1,0 +1,14 @@
+/* Variable Imports */
+@import '../variables.css';
+
+.job-listing-header {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.job-listing-header-details {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
