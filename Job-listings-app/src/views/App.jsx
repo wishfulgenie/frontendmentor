@@ -4,11 +4,11 @@ import { useState } from 'react'
 import data from '../data.json'
 
 /* Component Imports */
-import JobListingReqs from '../molecules/JobListingReqs'
+import JobFilters from '../molecules/JobFilters'
 
 const App = () => {
   const [jobList, setJobList] = useState([data[1]])
-  const [filterSelection, setFilterSelection] = useState(['TypeScript'])
+  const [filterSelection, setFilterSelection] = useState(['TypeScript', 'JavaScript', 'React', 'Python'])
 
   // TODO
   const updateFilterSelection = (e, action, data) => {
