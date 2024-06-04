@@ -1,19 +1,11 @@
 /* Styling imports */
 import styles from './Chip.module.css'
 
-const Chip = ({ label, value, type }) => {
+const Chip = ({ label, value, type, errorStatus }) => {
 
   const renderInputLabel = (label) => {
     return (
-      <div className={styles['input-label']}>
-        {label}
-      </div>
-    )
-  }
-
-  const renderInputErrorLabel = (label) => {
-    return (
-      <div className={styles['input-label-error']}>
+      <div className={errorStatus ? styles['input-label-error'] : styles['input-label']}>
         {label}
       </div>
     )
@@ -38,8 +30,7 @@ const Chip = ({ label, value, type }) => {
 
   return (
     <>
-      {type === 'input' && renderInputLabel(label)}
-      {type === 'inputError' && renderInputErrorLabel(label)}
+      {type === 'input' && renderInputLabel(label, errorStatus)}
       {type === 'error' && renderErrorLabel(label)}
       {type === 'age' && renderAgeLabel(label, value)}
     </>
