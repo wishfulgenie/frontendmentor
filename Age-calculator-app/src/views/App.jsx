@@ -1,5 +1,8 @@
 import { useState } from 'react'
 
+/* Function Imports */
+import { checkEmptyInput } from '../utils'
+
 /* Component Imports */
 import Form from '../organisms/Form'
 import AgeDisplay from '../molecules/AgeDisplay'
@@ -20,6 +23,27 @@ const App = () => {
   const handleButtonClick = (e) => {
     e.preventDefault()
     console.log('clicked')
+
+    // Perform checks for empty fields
+    const fields = ['day', 'month', 'year']
+    let anyEmpty = false
+    const newError = { ...error }
+    fields.forEach(field => {
+      if (checkEmptyInput(date, field)) {
+        newError[field].errorStatus = true
+        newError[field].errorMessage = 'This field is required'
+        anyEmpty = true
+      } else {
+        newError[field].errorStatus = false
+        newError[field].errorMessage = ''
+      }
+    })
+    if (anyEmpty) {
+      setError(newError)
+      return
+    }
+
+    console.log('This is our check');
   }
 
   const handleInputChange = (e, dateLabel) => {
