@@ -7,7 +7,7 @@ import Input from '../atoms/Input'
 
 const FormField = ({ label, value, errorMessage, onChangeHandler }) => {
   const errorStatus = errorMessage !== ''
-  const placeholder = label === 'Day' ? 'DD' : label === 'Month' ? 'MM' : label === 'Year' ? 'YYYY' : '';
+  const placeholder = label === 'day' ? 'DD' : label === 'month' ? 'MM' : label === 'year' ? 'YYYY' : '';
 
 
   return (
