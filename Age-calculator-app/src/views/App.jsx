@@ -1,7 +1,5 @@
 /* Component Imports */
-import Chip from '../atoms/Chip'
-import Input from '../atoms/Input'
-import Button from '../atoms/Button'
+import FormField from '../molecules/FormField'
 
 
 const App = () => {
@@ -11,15 +9,10 @@ const App = () => {
 
   return (
     <div className="age-calculator">
-      <Chip 
-        label={'Month'}
-        type={'input'}
-        errorStatus={true}
-      />
-      <Input
-        placeholder={'DD'}
-        value={'22'}
-        errorStatus={true}
+      <FormField
+        label={'Day'}
+        value={'125'}
+        errorMessage={'Must be a valid day'}
         onChangeHandler={testFunction}
       />
     </div>
