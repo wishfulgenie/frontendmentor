@@ -1,6 +1,7 @@
 /* Component Imports */
 import FormField from '../molecules/FormField'
 import AgeDisplay from '../molecules/AgeDisplay'
+import InteractionPanel from '../molecules/InteractionPanel'
 
 
 const App = () => {
@@ -14,10 +15,11 @@ const App = () => {
     <div className="age-calculator">
       <FormField
         label={'day'}
-        value={'125'}
-        errorMessage={'Must be a valid day'}
+        value={''}
+        errorMessage={''}
         onChangeHandler={testFunction}
       />
+      <InteractionPanel onClickHandler={testFunction}/>
       <AgeDisplay
         age={age}
       />
