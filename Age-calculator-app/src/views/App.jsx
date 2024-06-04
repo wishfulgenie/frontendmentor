@@ -1,6 +1,7 @@
 /* Component Imports */
 import Chip from '../atoms/Chip'
 import Input from '../atoms/Input'
+import Button from '../atoms/Button'
 
 
 const App = () => {
@@ -20,10 +21,6 @@ const App = () => {
         value={'22'}
         errorStatus={true}
         onChangeHandler={testFunction}
-      />
-      <Chip 
-        label={'Must be a valid month'}
-        type={'error'}
       />
     </div>
   )
