@@ -8,7 +8,7 @@ import InteractionPanel from '../molecules/InteractionPanel'
 
 const App = () => {
   const [date, setDate] = useState({ day: '26', month: '3', year: '38' })
-  const [age, setAge] = useState({ days: '26', months: '3', years: '38' })
+  const [age, setAge] = useState({ days: '', months: '', years: '' })
   const [error, setError] = useState({
     day: { errorStatus: false, errorMessage: '' },
     month: { errorStatus: false, errorMessage: '' },
@@ -21,7 +21,6 @@ const App = () => {
   }
 
   const handleInputChange = (e, dateLabel) => {
-    console.log(`event value: ${e.target.value}, dateLabel: ${dateLabel}`)
     switch (dateLabel) {
       case 'DD':
         setDate({ ...date, day: e.target.value })
