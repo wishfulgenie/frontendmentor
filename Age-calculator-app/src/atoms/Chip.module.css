@@ -1,3 +1,18 @@
 /* Variable imports */
-@import '../variables.css'
+@import '../variables.css';
 
+.input-label {
+  font-size: 1rem;
+  font-family: 'Poppins-Bold';
+  color: var(--clr-smokeyGrey);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.input-label-error {
+  font-size: 1rem;
+  font-family: 'Poppins-Bold';
+  color: var(--clr-lightRed);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}

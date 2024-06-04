@@ -5,8 +5,16 @@ const Chip = ({ label, value, type }) => {
 
   const renderInputLabel = (label) => {
     return (
-      <div>
+      <div className={styles['input-label']}>
+        {label}
+      </div>
+    )
+  }
 
+  const renderInputErrorLabel = (label) => {
+    return (
+      <div className={styles['input-label-error']}>
+        {label}
       </div>
     )
   }
@@ -14,7 +22,7 @@ const Chip = ({ label, value, type }) => {
   const renderErrorLabel = (label) => {
     return (
       <div>
-        
+
       </div>
     )
   }
@@ -29,9 +37,12 @@ const Chip = ({ label, value, type }) => {
 
   return (
     <>
-      {type === 'inputLabel' && renderInputLabel(label)}
-      {type === 'errorLabel' && renderErrorLabel(label)}
-      {type === 'ageLabel' && renderAgeLabel(label, value)}
+      {type === 'input' && renderInputLabel(label)}
+      {type === 'inputError' && renderInputErrorLabel(label)}
+      {type === 'error' && renderErrorLabel(label)}
+      {type === 'age' && renderAgeLabel(label, value)}
     </>
   )
 }
+
+export default Chip
