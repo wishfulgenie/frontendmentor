@@ -5,8 +5,9 @@ const App = () => {
   return (
     <div className="age-calculator">
       <Chip
-        type={'input'}
-        label={'Day'}
+        type={'age'}
+        label={'years'}
+        value={''}
       />
     </div>
   )

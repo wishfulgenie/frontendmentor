@@ -21,16 +21,17 @@ const Chip = ({ label, value, type }) => {
 
   const renderErrorLabel = (label) => {
     return (
-      <div>
-
+      <div className={styles['error-label']}>
+        {label}
       </div>
     )
   }
 
-  const renderAgeLabel = (label) => {
+  const renderAgeLabel = (label, value) => {
     return (
-      <div>
-
+      <div className={styles['age-label-container']}>
+        <span className={styles['age-value']}>{value == '' ? '- -' : value}</span>
+        <span className={styles['age-label']}>{label}</span>
       </div>
     )
   }
