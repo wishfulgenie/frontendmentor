@@ -5,8 +5,7 @@ import styles from './FormField.module.css'
 import Chip from '../atoms/Chip'
 import Input from '../atoms/Input'
 
-const FormField = ({ label, value, errorMessage, onChangeHandler }) => {
-  const errorStatus = errorMessage !== ''
+const FormField = ({ label, value, errorSegment, onChangeHandler }) => {
   const placeholder = label === 'day' ? 'DD' : label === 'month' ? 'MM' : label === 'year' ? 'YYYY' : '';
 
 
@@ -15,18 +14,18 @@ const FormField = ({ label, value, errorMessage, onChangeHandler }) => {
       <Chip 
         label={label}
         type={'input'}
-        errorStatus={errorStatus}
+        errorStatus={errorSegment.errorStatus}
       />
       <Input
         placeholder={placeholder}
         value={value}
-        errorStatus={errorStatus}
+        errorStatus={errorSegment.errorStatus}
         onChangeHandler={onChangeHandler}
       />
-      <Chip 
-        label={errorMessage}
+      {errorSegment.errorStatus && <Chip 
+        label={errorSegment.errorMessage}
         type={'error'}
-      />
+      />}
     </div>
   )
 }
