@@ -15,6 +15,8 @@ const App = () => {
     year: { errorStatus: false, errorMessage: '' }
   })
 
+  // TODO: There likely won't be enough time for functionality. Leave this as an exercise for the students
+  // The main focus of this lecture was teachng the approach towards designing atomic components
   const handleButtonClick = (e) => {
     e.preventDefault()
     console.log('clicked')
