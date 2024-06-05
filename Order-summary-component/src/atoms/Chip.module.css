@@ -2,19 +2,19 @@
 @import '../variables.css';
 
 .header-text {
-  font-weight: var(--fw-extraBold);
   font-size: 2rem;
+  font-weight: var(--fw-extraBold);
   color: var(--clr-darkBlue);
 }
 
 .regular-text {
-  font-weight: var(--fw-regular);
   font-size: 1rem;
+  font-weight: var(--fw-regular);
   color: var(--clr-desaturatedBlue);
 }
 
 .alt-header-text {
-  font-weight: var(--fw-extraBold);
   font-size: 1rem;
+  font-weight: var(--fw-extraBold);
   color: var(--clr-darkBlue)
 }
