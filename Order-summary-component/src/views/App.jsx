@@ -1,5 +1,5 @@
 /* Component Imports */
-import ButtonGroup from "../molecules/ButtonGroup.jsx";
+import PlanCost from "../molecules/PlanCost";
 
 const App = () => {
 
@@ -10,7 +10,7 @@ const App = () => {
 
   return (
     <div className="order-card-container">
-      <ButtonGroup />
+      <PlanCost />
     </div>
   )
 }
