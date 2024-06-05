@@ -1,0 +1,6 @@
+/* Variable Imports */
+@import '../variables.css';
+
+.music-icon {
+  width: 50px;
+}
