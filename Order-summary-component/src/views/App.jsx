@@ -1,6 +1,9 @@
-/* Component Imports */
-import OrderSummary from '../molecules/OrderSummary.jsx';
-import PlanPanel from '../organisms/PlanPanel.jsx'
+/* Component imports */
+import Image from '../atoms/Image'
+import OrderCard from '../organisms/OrderCard'
+
+/* Image imports */
+import Hero from '../../assets/images/illustration-hero.svg'
 
 const App = () => {
 
@@ -10,9 +13,9 @@ const App = () => {
   }
 
   return (
-    <div className='order-card-container'>
-      <OrderSummary />
-      <PlanPanel />
+    <div className='order-summary-container'>
+      <Image src={Hero} className={'hero-image'}/>
+      <OrderCard />
     </div>
   )
 }

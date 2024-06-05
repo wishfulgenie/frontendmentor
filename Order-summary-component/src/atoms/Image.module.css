@@ -1,6 +1,11 @@
 /* Variable Imports */
 @import '../variables.css';
 
+.hero-image {
+  border-radius: 1rem 1rem 0rem 0rem;
+}
+
 .music-icon {
   width: 50px;
 }
+

@@ -53,13 +53,12 @@ body {
   gap: 1rem;
 }
 
-.order-card-container {
+.order-summary-container {
   width: 450px;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   background-color: white;
-  padding: 1rem;
+  border-radius: 1rem 1rem 1rem 1rem;
 }
 
 .attribution {

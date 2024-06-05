@@ -2,8 +2,7 @@
 @import '../variables.css';
 
 .payment-button {
-  width: 375px;
-  height: 50px;
+  height: 55px;
   border: none;
   font-size: 1rem;
   font-weight: var(--fw-bold);
@@ -19,12 +18,11 @@
 }
 
 .cancel-button {
-  width: 375px;
-  height: 50px;
+  height: 55px;
   border: none;
   font-size: 1rem;
   font-weight: var(--fw-extraBold);
-  background-color: var(--clr-veryPaleBlue);
+  background-color: white;
   color: var(--clr-desaturatedBlue);
   border-radius: 0.75rem;
 }
