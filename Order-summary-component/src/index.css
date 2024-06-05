@@ -55,6 +55,9 @@ body {
 
 .order-card-container {
   width: 450px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
   background-color: var(--clr-veryPaleBlue);
 }
 
