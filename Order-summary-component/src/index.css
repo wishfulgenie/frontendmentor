@@ -19,6 +19,7 @@
 * {
   margin: 0;
   font-family: 'Red Hat Display';
+  font-weight: var(--fw-regular);
   font-size: var(--font-paragraph);
 }
 body {
@@ -50,6 +51,11 @@ body {
   background-repeat: repeat-x;
   height: 100vh;
   gap: 1rem;
+}
+
+.order-card-container {
+  width: 450px;
+  background-color: var(--clr-veryPaleBlue);
 }
 
 .attribution {
