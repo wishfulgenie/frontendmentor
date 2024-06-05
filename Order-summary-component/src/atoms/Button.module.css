@@ -24,10 +24,9 @@
   border: none;
   font-size: 1rem;
   font-weight: var(--fw-extraBold);
-  background-color: var(--clr-white);
+  background-color: var(--clr-veryPaleBlue);
   color: var(--clr-desaturatedBlue);
   border-radius: 0.75rem;
-  box-shadow: 0px 20px 8px var(--clr-paleBlue);
 }
 
 .cancel-button:hover {
