@@ -38,3 +38,55 @@ export function checkValidInput (date, dateLabel) {
 
   return '';
 }
+
+/**
+ * Checks if a given date is valid by creating a Date object and comparing the values (ChatGPT reference)
+ * @param {object} date 
+ * @returns {boolean}
+ */
+export function isValidDate(date) {
+  const yearVal = Number(date.year)
+  const monthVal = Number(date.month)
+  const dayVal = Number(date.day)
+  const dateObj = new Date(yearVal, monthVal - 1, dayVal); // month is 0-indexed in JavaScript Date
+  return (
+    dateObj.getFullYear() === yearVal &&
+    dateObj.getMonth() === (monthVal - 1) &&
+    dateObj.getDate() === dayVal
+  );
+}
+
+/**
+ * Returns the difference between two dates (ChatGPT reference)
+ * @param {Date} startDate 
+ * @param {Date} endDate 
+ * @returns {object}
+ */
+export function calculateDifference(startDate, endDate) {
+  let start = new Date(startDate);
+  let end = new Date(endDate);
+
+  // Calculate the difference in total years
+  let years = end.getFullYear() - start.getFullYear();
+
+  // Adjust for the months
+  let months = end.getMonth() - start.getMonth();
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
+
+  // Adjust for the days
+  let days = end.getDate() - start.getDate();
+  if (days < 0) {
+    months--;
+    if (months < 0) {
+      years--;
+      months += 11;
+    }
+    let previousMonth = new Date(end.getFullYear(), end.getMonth(), 0);
+    days += previousMonth.getDate();
+  }
+
+  return { days, months, years };
+}

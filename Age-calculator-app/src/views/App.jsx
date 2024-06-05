@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 /* Function Imports */
-import { checkEmptyInput, checkValidInput } from '../utils'
+import { checkEmptyInput, checkValidInput, isValidDate, calculateDifference } from '../utils'
 
 /* Component Imports */
 import Form from '../organisms/Form'
@@ -10,7 +10,7 @@ import InteractionPanel from '../molecules/InteractionPanel'
 
 
 const App = () => {
-  const [date, setDate] = useState({ day: '26', month: '3', year: '38' })
+  const [date, setDate] = useState({ day: '', month: '', year: '' })
   const [age, setAge] = useState({ days: '', months: '', years: '' })
   const [error, setError] = useState({
     day: { errorStatus: false, errorMessage: '' },
@@ -18,7 +18,7 @@ const App = () => {
     year: { errorStatus: false, errorMessage: '' }
   })
 
-  // TODO: There likely won't be enough time for functionality. Leave this as an exercise for the students
+  // There likely won't be enough time for functionality. Leave this as an exercise for the students
   // The main focus of this lecture was teachng the approach towards designing atomic components
   const handleButtonClick = (e) => {
     e.preventDefault()
@@ -62,7 +62,25 @@ const App = () => {
       return
     }
 
-    console.log('This is our check');
+    // Perform check to see if the date is valid
+    if (!isValidDate(date)) {
+      setError({
+        ...error,
+        day: { ...error.day, errorMessage: 'Must be a valid date', errorStatus: true },
+        month: { ...error.month, errorStatus: true },
+        year: {...error.year, errorStatus: true },
+      });
+    } else {
+      // Calculate difference between date and determine current date
+      const pastDate = new Date(Number(date.year), Number(date.month) - 1, Number(date.day))
+      const today = new Date(Date.now())
+      setAge(calculateDifference(pastDate, today))
+      setError({
+        day: { errorStatus: false, errorMessage: '' },
+        month: { errorStatus: false, errorMessage: '' },
+        year: { errorStatus: false, errorMessage: '' }
+      })
+    }
   }
 
   const handleInputChange = (e, dateLabel) => {
