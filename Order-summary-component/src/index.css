@@ -1,3 +1,6 @@
+/* Variable Imports */
+@import './variables.css';
+
 /* Font Imports */
 @font-face {
   font-family: 'Red Hat Display';
@@ -5,29 +8,6 @@
   font-weight: 500 700 900;
   src: url('../assets/fonts/RedHatDisplay-VariableFont_wght.ttf')
        format('truetype')
-}
-
-/*
-  CSS Variables
-*/
-:root {
-  /* Layout */
-  --width-mobile: 375px;
-  --width-desktop: 1440px;
-
-  /* Colours */
-  --clr-white: hsl(0, 100%, 100%);
-  --clr-paleBlue: hsl(225, 100%, 94%);
-  --clr-brightBlue: hsl(245, 75%, 52%);
-  --clr-veryPaleBlue: hsl(225, 100%, 98%);
-  --clr-desaturatedBlue: hsl(224, 23%, 55%);
-  --clr-darkBlue: hsl(223, 47%, 23%);
-
-  /* Typography */
-  --font-paragraph: 16px;
-  --fw-regular: 500;
-  --fw-bold: 700;
-  --fw-offBlack: 900;
 }
 
 /*
@@ -39,6 +19,8 @@
 * {
   margin: 0;
   font-family: 'Red Hat Display';
+  font-weight: var(--fw-regular);
+  font-size: var(--font-paragraph);
 }
 body {
   line-height: 1.5;
@@ -59,142 +41,28 @@ p, h1, h2, h3, h4, h5, h6 {
   isolation: isolate;
 }
 
-/** ChatGPT helped with obtaining the repeating image**/
 body {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   background-color: var(--clr-paleBlue);
-  background-image: url('./assets/images/pattern-background-desktop.svg');
+  background-image: url('../assets/images/pattern-background-desktop.svg');
   background-repeat: repeat-x;
   height: 100vh;
   gap: 1rem;
 }
 
-.banner-image {
-  position: absolute;
-  inset: 0;
-}
-
-.card-and-banner {
+.order-summary-container {
   width: 450px;
-}
-
-.order-banner {
-  border-radius: 1rem 1rem 0 0;
-}
-
-.order-card {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  background: var(--clr-white);
-  padding: 2rem;
-  border-radius: 0 0 1rem 1rem;
-}
-
-.order-summary {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-  padding: 0 1rem 0 1rem;
-  text-align: center
-}
-
-.order-summary h1 {
-  color: var(--clr-darkBlue);
-  font-weight: var(--fw-offBlack);
-}
-
-.order-summary p {
-  font-size: var(--font-paragraph);
-  color: var(--clr-desaturatedBlue);
-  font-weight: var(--fw-regular);
-}
-
-.order-plan {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background: var(--clr-veryPaleBlue);
-  padding: 1.25rem;
-  border-radius: 1rem;
-}
-
-.plan-details {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 1rem;
-}
-
-.plan-details-text {
-  display: flex;
-  flex-direction: column;
-}
-
-.plan-details-text h4 {
-  color: var(--clr-darkBlue);
-  font-weight: var(--fw-offBlack);
-}
-
-.plan-details-text p {
-  font-size: var(--font-paragraph);
-  color: var(--clr-desaturatedBlue);
-  font-weight: var(--fw-regular);
-}
-
-.change-button {
-  all: unset;
-  font-size: var(--font-paragraph);
-  font-weight: var(--fw-bold);
-  color: var(--clr-brightBlue);
-  text-decoration: underline;
-}
-
-.change-button:hover {
-  cursor: pointer;
-}
-
-.button-display {
-  display: flex;
-  flex-direction: column;
-  gap: 0.75rem;
-}
-
-.payment-button {
-  text-align: center;
-  font-size: var(--font-paragraph);
-  font-weight: var(--fw-bold);
-  border-radius: 1rem;
-  border: 0rem;
-  background-color: var(--clr-brightBlue);
-  padding: 13px 0 13px 0;
-  box-shadow: 0 20px 8px var(--clr-paleBlue);
-  color: var(--clr-white);
-}
-
-.cancel-button {
-  text-align: center;
-  font-size: var(--font-paragraph);
-  font-weight: var(--fw-bold);
-  border-radius: 1rem;
-  border: 0rem;
-  color: var(--clr-desaturatedBlue);
-  background-color: var(--clr-white);
-  font-size: var(--font-paragraph);
-  font-weight: var(--fw-bold);
-  text-align: center;
-  margin-top: 20px;
-}
-
-.button-display button:hover {
-  cursor: pointer;
+  background-color: white;
+  border-radius: 1rem 1rem 1rem 1rem;
 }
 
 .attribution {
-  font-size: var(--font-paragraph);
+  font-size: 1rem;
   font-weight: var(--fw-regular);
   color: var(--clr-darkBlue);
 }

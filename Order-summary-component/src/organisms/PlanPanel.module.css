@@ -1,0 +1,12 @@
+/* Variable Imports */
+@import '../variables.css';
+
+.plan-panel-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--clr-veryPaleBlue);
+  padding: 1.5rem;
+  border-radius: 10px;
+}
