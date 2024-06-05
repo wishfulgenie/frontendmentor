@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 /* Function Imports */
-import { checkEmptyInput } from '../utils'
+import { checkEmptyInput, checkValidInput } from '../utils'
 
 /* Component Imports */
 import Form from '../organisms/Form'
@@ -27,19 +27,38 @@ const App = () => {
     // Perform checks for empty fields
     const fields = ['day', 'month', 'year']
     let anyEmpty = false
-    const newError = { ...error }
+    const emptyError = { ...error }
     fields.forEach(field => {
       if (checkEmptyInput(date, field)) {
-        newError[field].errorStatus = true
-        newError[field].errorMessage = 'This field is required'
+        emptyError[field].errorStatus = true
+        emptyError[field].errorMessage = 'This field is required'
         anyEmpty = true
       } else {
-        newError[field].errorStatus = false
-        newError[field].errorMessage = ''
+        emptyError[field].errorStatus = false
+        emptyError[field].errorMessage = ''
       }
     })
     if (anyEmpty) {
-      setError(newError)
+      setError(emptyError)
+      return
+    }
+
+    // Perform checks for invalid fields
+    let anyInvalid = false
+    const invalidError = { ...error }
+    fields.forEach(field => {
+      const invalidCheck = checkValidInput(date, field)
+      if (invalidCheck !== '') {
+        invalidError[field].errorStatus = true
+        invalidError[field].errorMessage = invalidCheck
+        anyInvalid = true
+      } else {
+        emptyError[field].errorStatus = false
+        emptyError[field].errorMessage = ''
+      }
+    })
+    if (anyInvalid) {
+      setError(invalidError)
       return
     }
 
