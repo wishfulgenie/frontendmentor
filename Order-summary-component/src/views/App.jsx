@@ -1,5 +1,6 @@
 /* Component Imports */
-import OrderSummary from "../molecules/OrderSummary";
+import OrderSummary from '../molecules/OrderSummary.jsx';
+import PlanPanel from '../organisms/PlanPanel.jsx'
 
 const App = () => {
 
@@ -9,8 +10,9 @@ const App = () => {
   }
 
   return (
-    <div className="order-card-container">
+    <div className='order-card-container'>
       <OrderSummary />
+      <PlanPanel />
     </div>
   )
 }

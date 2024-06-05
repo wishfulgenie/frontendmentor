@@ -58,7 +58,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  background-color: var(--clr-veryPaleBlue);
+  background-color: white;
+  padding: 1rem;
 }
 
 .attribution {
