@@ -8,7 +8,7 @@ import MusicIcon from '../../assets/images/icon-music.svg'
 import Chip from '../atoms/Chip.jsx'
 import Image from '../atoms/Image.jsx'
 
-const PlanCost = ({}) => {
+const PlanCost = () => {
   return (
     <div className={styles['plan-cost-container']}>
       <Image src={MusicIcon} className={'music-icon'}/>

@@ -1,5 +1,5 @@
 /* Component Imports */
-import PlanCost from "../molecules/PlanCost";
+import OrderSummary from "../molecules/OrderSummary";
 
 const App = () => {
 
@@ -10,7 +10,7 @@ const App = () => {
 
   return (
     <div className="order-card-container">
-      <PlanCost />
+      <OrderSummary />
     </div>
   )
 }
